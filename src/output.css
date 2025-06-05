@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-teal-600: oklch(60% 0.118 184.704);
     --color-black: #13181a;
     --color-white: #f8f8f8;
@@ -221,38 +222,14 @@
   .max-h-\[25rem\] {
     max-height: 25rem;
   }
-  .max-w-\[2\.5\] {
-    max-width: 2.5;
-  }
-  .max-w-\[2\.5rem\] {
-    max-width: 2.5rem;
-  }
-  .max-w-\[2\.25rem\] {
-    max-width: 2.25rem;
-  }
-  .max-w-\[12\.5rem\] {
-    max-width: 12.5rem;
-  }
   .max-w-\[14rem\] {
     max-width: 14rem;
-  }
-  .max-w-\[15rem\] {
-    max-width: 15rem;
-  }
-  .max-w-\[16\.5rem\] {
-    max-width: 16.5rem;
-  }
-  .max-w-\[16rem\] {
-    max-width: 16rem;
   }
   .max-w-\[22\.5rem\] {
     max-width: 22.5rem;
   }
   .max-w-\[25rem\] {
     max-width: 25rem;
-  }
-  .max-w-\[225rem\] {
-    max-width: 225rem;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -277,6 +254,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -409,6 +389,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .underline {
     text-decoration-line: underline;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,17 @@
                 <div class="size-12"><img src="./assets/icon_logo.png" alt="Logo do site"></div>
                 <h1 class="text-4xl">Portfólio</h1>
         </div>
-        <div class="size-8"><img src="./assets/icon_hamburguer.png" alt="Ícone do hamburguer"></div>
+        <div class="hidden lg:flex flex-row items-center text-2xl gap-8 justify-center">
+            <a href="#hero" class="hover:text-main transition duration-200">Início</a>
+            <a href="#projects" class="hover:text-main transition duration-200">Projetos</a>
+            <a href="#" class="font-semibold text-white bg-main px-4 py-2 rounded-2xl hover:bg-teal-600 transition duration-200">Fale conosco</a href="#">
+        </div>
+        <div class="size-8 lg:hidden"><img src="./assets/icon_hamburguer.png" alt="Ícone do hamburguer"></div>
     </header>
 
 <main>
     <!-- SECTION HERO -->
-    <section class="text-black px-6 py-16 bg-white flex flex-col items-center">
+    <section id="hero" class="text-black px-6 py-16 bg-white flex flex-col items-center">
         <div class="max-w-[25rem] max-h-[25rem]"><img src="./assets/sally.png" alt="Imagem da Sally, canguru mascote da byron.solutions"></div>
         <div class="flex flex-col gap-12">
             <div class="text-center flex flex-col gap-8 items-center">
@@ -47,7 +52,7 @@
         </div>
     </section>
     <!-- SECTION PROJECTS -->
-     <section class="bg-secondary px-6 py-8 text-black flex flex-col gap-8 items-start">
+     <section id="projects" class="bg-secondary px-6 py-8 text-black flex flex-col gap-8 items-start">
         <h2 class="text-white text-2xl font-extrabold uppercase">Últimos projetos</h2>
         <div class="grid grid-flow-row grid-cols-1 gap-12">
             <div class="bg-white max-w-[22.5rem] flex flex-col rounded-lg p-3 gap-4 drop-shadow-lg">
